@@ -1,0 +1,14 @@
+<kendo-grid [data]="accounts" [loading]="loading" (remove)="removeHandler($event)">
+  <kendo-grid-column *ngFor="let col of columns" [field]="col.field"></kendo-grid-column>
+ <!-- <kendo-grid-command-column title="command" width="220">
+    <ng-template kendoGridCellTemplate let-isNew="isNew" let-dataItem="dataItem">
+      &lt;!&ndash; remove the command directive, will be visible when not in edit mode &ndash;&gt;
+      <button kendoGridRemoveCommand>Remove</button>
+    </ng-template>
+  </kendo-grid-command-column>-->
+</kendo-grid>
+
+
+
+
+
